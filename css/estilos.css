@@ -1,0 +1,767 @@
+
+/*PARA DESPUÉS: CAMBIAR MEDIDAS PX POR EM / VER FLEXBOX PARA ESTRUCTURAR BIEN DE VERDAD /PONER TEXTOS DE VERDAD /
+ sacar <br> del index
+ 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* PÁGINA INDEX */
+
+/* HEADER */
+
+.header {
+    background-color: #244444;
+    height: 130px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3000;
+}
+
+.nav {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__imagen {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.nav__barraNavegacion__link {
+    text-decoration: none;
+    list-style: none;
+    color: #f4e4c4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav__barraNavegacion__elemento {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav__barraNavegacion__elemento:hover {
+    background-color: #84543c;
+    transition: 0.3s;
+}
+
+
+/* BODY */
+
+body{
+    background-color: #f4e4c4;
+}
+
+
+/* MAIN */ 
+
+.main{
+    padding-top: 140px;
+    text-align: center;
+    height: 550px;
+}
+
+.main__biblioteca{
+    width: 100%;
+    height: 550px;
+    filter: brightness(50%);
+    position: relative;
+    bottom: 20px;
+}
+
+.main__logotipo{
+    width: 930px;
+    height: 215px;
+    position: relative;
+    bottom: 400px;
+    z-index: 2000;
+}
+
+
+/* SECCIÓN DESCRIPCIÓN */
+
+.seccionDescripcion{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.articuloDescripcion{
+    width: 45%;
+}
+
+.articuloDescripcion--paddinRight{
+    padding-right: 15px;
+}
+
+.articuloDescripcion--paddinLeft{
+    padding-left: 15px;
+}
+
+.articuloDescripcion_parrafo{
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+/* SECCIÓN SERVICIOS */
+
+.seccionServicios{
+    text-align: center;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "informe trabajoMano correccion";
+    justify-content: center;
+    grid-column-gap: 50px;
+}
+
+.informe{
+    grid-area: informe;
+}
+
+.trabajoMano{
+    grid-area: trabajoMano;
+}
+
+.correccion{
+    grid-area: correccion;
+}
+
+.seccionServicios__servicio{
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+    background-color:  #eab7a350;
+    border-radius: 5px;
+}
+
+.seccionServicios__servicio:hover{
+    background-color:  #eab7a3;
+    transition: 0.5s;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0px 0px 2px 5px #999;
+}
+
+.seccionServicios__servicio__titulo{
+    font-size: 1.7em;
+    margin: 15px;
+}
+
+.seccionServicios__servicio__parrafo{
+    line-height: 25px;
+    margin: 15px;
+}
+
+/* FOOTER */
+
+/* Sección Contacto */
+
+.footer{
+    background-color: #beb9b3;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 215px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer__contacto{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "wpp numero"
+    "instagram cuenta"
+    "mail correo"
+    ;
+    grid-template-rows: 0.5fr;
+}
+
+.gridWpp{
+    grid-area: wpp;
+}
+
+.gridIg{
+    grid-area: instagram;
+}
+
+.gridMail{
+    grid-area: mail;
+}
+
+.gridNumero{
+    grid-area: numero;
+}
+
+.gridCuenta{
+    grid-area: cuenta;
+}
+
+.gridCorreo{
+    grid-area: correo;
+}
+
+.footer__contacto__titulo{
+    grid-area: titulo;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.footer__contacto_imagenes{
+    display: inline-block;
+}
+
+.footer__contacto__imagen{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.footer__contacto_texto{
+    display: inline-block;
+    width: 230px;
+    height: 150px;
+
+}
+
+.footer__contacto_info{
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.footer__contacto_info--alineado{
+    margin-bottom: 10px;
+}
+
+.footer__contacto_info--sinLink{
+    text-decoration: none;
+    list-style: none;
+    color:  #000000 ;
+}
+
+/* Sección Nav */
+
+.footer__nav__lista{
+    display: inline-block;
+}
+
+.footer__nav__link{
+    text-decoration: none;
+    list-style: none;
+    color:  #000000 ;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+/* Sección copyright */
+
+.footer__copyright__imagen{
+    width: 30px;
+    height: 30px;
+}
+
+/* PÁGINA: SOBRE MI */
+
+
+.sobreMi{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobreMi__contenedorImagen{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sobreMi__contenedorPresentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreMi__titulo{
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #244444d9;
+}
+
+.sobreMi__imagenRostro{
+    width: 350px;
+    height: 500px;
+}
+
+.sobreMi__presentacion{
+    width: 500px;
+    margin-left: 50px;
+    line-height: 25px;
+    text-align: initial;
+}
+
+.contenedorTrabajarjuntos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajarJuntos{
+    width: 70%;
+    margin: 70px auto;
+}
+
+.trabajarJuntos__descripcion{
+    line-height: 25px;
+}
+
+
+
+
+/* PÁGINA: SERVICIOS */
+
+.introduccionServicios{
+    padding-top: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduccionServicios__titulo{
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #244444d9;
+}
+
+.introduccionServicios__texto{
+    width: 70%;   
+}
+
+.servicios{
+    padding-top: 115px;
+    text-align: center;
+}
+
+.servicios__articulo{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios__articulo__imagen{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: #244444c4;
+}
+
+.servicios__articulo__imagen:hover{
+    width: 310px;
+    height: 310px;
+    transition: 0.5s;
+    border-style: solid;
+    border-color: #244444c4;
+    box-shadow: 0px 0px 4px 5px  #c29076b8;
+}
+
+.servicios__articulo__descripcion{
+    width: 40%;
+    text-align: justify;
+    margin-left: 30px;
+    line-height: 20px;
+}
+
+.servicios__articulo__descripcion--marginLeft{
+    width: 40%;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 20px;
+}
+
+
+
+
+/* PÁGINA: CONTACTO */
+
+.introduccionContacto{
+    padding-top: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.introduccionContacto__titulo{
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #244444d9;
+}
+
+.introduccionContacto__texto{
+    width: 70%;   
+}
+
+.formulario{
+    margin-top: 80px;
+}
+
+.formulario__contenedorDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__contenedor__datos{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    background-color: #f7f5f5;
+    border-radius: 5px;
+}
+
+.formulario__contenedor__opcion{
+    height: 33px;
+    width: 250px;
+    text-align: center;
+    background-color: #f7f5f5;
+    border-radius: 5px;
+}
+
+.formulario__contenedorConsulta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario__contenedor__texto{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 450px;
+    padding: 10px;
+    background-color: #f7f5f5;
+    border-radius: 5px;
+}
+
+.formulario__contenedor__boton{
+    width: 140px;
+    height: 30px;
+    background-color: #e4bc74;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.formulario__contenedor__boton:hover{
+    width: 145px;
+    height: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+/* PÁGINA: FAQ */
+
+.introduccionFAQ{
+    padding-top: 230px;
+}
+
+.introduccionFAQ__titulo{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #244444d9;
+}
+
+.introduccionFAQ__texto{
+    width: 70%; 
+    margin: 0 auto;   
+}
+
+
+.preguntas{
+    margin: 50px;
+}
+
+.preguntas__titulo{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.preguntas__respuesta{
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    .seccionServicios{
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 40px 40px; 
+        grid-template-areas: 
+        ". informe trabajoMano ."
+        ". correccion correccion .";
+        justify-content: center;
+    }
+
+    .seccionServicios__servicio:hover{
+        pointer-events: none;
+        background-color: #eab7a350;
+        transition: none;
+        width: none;
+        height: none;
+        box-shadow: none;
+    }
+
+    .main__logotipo{
+        width: 768px;
+        height: 200px;
+    }
+
+    .seccionDescripcion{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .nav__barraNavegacion__elemento:hover {
+        background-color: #244444;
+        transition: none;
+    }
+
+    .servicios__articulo__imagen:hover{
+        width: 300px;
+        height: 300px;
+        transition: none;
+        border-style: solid;
+        border-color: #244444c4;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer{
+        height: 360px;
+        flex-direction: column;
+    }
+
+    .footer__contacto__titulo{
+        text-align: center;
+        margin-bottom: 15px
+    }
+
+    .footer__contacto_texto{
+        height: 0px;
+    }
+
+    .main__biblioteca{
+        height: 480px;
+    }
+
+    .articuloDescripcion_parrafo {
+        font-size: 1.2em;
+    }
+
+    .main {
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav__barraNavegacion {
+        display: none;
+    }
+    /*ACÁ APARECERÍA EL MENU HAMBURGUESA*/
+    .nav__imagen {
+        margin-right: 0px;
+    }
+    
+    .main{
+        height: 440px;
+    }
+       
+    .main__biblioteca{
+        height: 400px;
+    }
+    
+    .main__logotipo{
+        width: 480px;
+        height: 120px;
+        bottom: 300px;
+    }
+
+    .seccionDescripcion {
+        margin-bottom: 220px;
+        margin-top: 25px;
+    }
+    
+    .articuloDescripcion {
+        width: 80%;
+        padding-bottom: 60px;
+    }
+    
+    .articuloDescripcion--paddinLeft{
+        padding-left: 0px;
+    }
+    
+    .articuloDescripcion_parrafo{
+        font-size: 1.1em;
+    }
+   
+    .seccionServicios{ 
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "informe"
+        "trabajoMano"
+        "correccion";
+    }
+
+    .footer__barraNavegacion{
+        display: none;
+    }
+
+    .sobreMi__presentacion {
+        width: 350px;
+        margin-left: 50px;
+    }
+
+    .trabajarJuntos__descripcion {
+        font-size: 13px;
+    }
+
+    .servicios__articulo{
+        flex-direction: column;
+    }   
+    
+    .servicios__articulo--reverse768{
+        flex-direction: column-reverse;
+    }
+
+    .servicios__articulo__descripcion {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .servicios__articulo__descripcion--marginLeft {
+        margin-right: 0px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .servicios__articulo__imagen {
+        width: 250px;
+        height: 250px;
+    }
+
+    .formulario__contenedorDatos {
+        flex-direction: column;
+    }
+
+    .formulario__contenedor__datos {
+        margin-bottom: 30px;
+    }
+
+    .formulario__contenedor__texto {
+        width: 425px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main__logotipo {
+        width: 300px;
+        height: 90px;
+        bottom: 200px;
+    }
+
+    .main__biblioteca {
+        height: 300px;
+    }
+
+    .main {
+        height: 370px;
+    }
+
+    .articuloDescripcion_parrafo {
+        font-size: 1em;
+    }
+
+    .seccionDescripcion {
+        margin-bottom: 380px;
+    }
+    
+    .seccionServicios__servicio__titulo {
+        font-size: 1.4em;
+    }
+
+    .seccionServicios__servicio {
+        width: 290px;
+        height: 500px;
+    }
+
+    .footer__contacto_info {
+        font-size: 0.9em;
+    }
+
+    .nav__imagen {
+        width: 85px;
+        height: 85px;
+    }
+
+    .sobreMi__imagenRostro {
+        width: 250px;
+        height: 350px;
+    }
+
+    .sobreMi__presentacion {
+        width: 300px;
+        margin-left: 0px;
+        font-size: 13px;
+    }
+
+    .servicios__articulo__descripcion {
+    width: 250px;
+    }
+    
+    .servicios__articulo__descripcion--marginLeft {
+    width: 250px;
+    }
+
+    .formulario__contenedor__texto {
+        width: 280px;
+    }
+}
