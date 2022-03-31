@@ -46,6 +46,10 @@
     font-weight: 600;
 }
 
+.nav__barraNavegacion__link:hover{
+    color: #f4e4c4;
+}
+
 .nav__barraNavegacion__elemento {
     display: inline-block;
     margin: 0 10px;
@@ -99,6 +103,7 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 155px;
 }
 
 .articuloDescripcion{
@@ -164,6 +169,7 @@ body{
 .seccionServicios__servicio__titulo{
     font-size: 1.7em;
     margin: 15px;
+    font-weight: 700;
 }
 
 .seccionServicios__servicio__parrafo{
@@ -251,6 +257,10 @@ body{
     display: inline-block;
     margin-top: 10px;
     vertical-align: middle;
+}
+
+.footer__contacto_info:hover{
+    color: black;
 }
 
 .footer__contacto_info--alineado{
