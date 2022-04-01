@@ -570,6 +570,10 @@ body{
         height: 480px;
     }
 
+    .main__biblioteca3{
+        height: 480px;
+    }
+
     .main {
         height: 500px;
     }
@@ -599,6 +603,10 @@ body{
     }
        
     .main__biblioteca{
+        height: 400px;
+    }
+
+    .main__biblioteca3{
         height: 400px;
     }
     
@@ -668,6 +676,10 @@ body{
 
 @media screen and (max-width: 480px){
     .main__biblioteca {
+        height: 300px;
+    }
+
+    .main__biblioteca3{
         height: 300px;
     }
 
