@@ -15,9 +15,8 @@
 /* HEADER */
 
 .header {
-    background-color: #244444;
-    height: 130px;
     width: 100vw;
+    background-color: #244444;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +25,7 @@
 }
 
 .nav {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #244444;
 }
 
 .nav__imagen {
@@ -69,11 +65,22 @@ body{
     background-color: #f4e4c4;
 }
 
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    --bs-gutter-x: 0px;
+}
+
 
 /* MAIN */ 
 
 .main{
-    padding-top: 140px;
+    padding-top: 115px;
     text-align: center;
     height: 550px;
 }
@@ -82,15 +89,12 @@ body{
     width: 100%;
     height: 550px;
     filter: brightness(50%);
-    position: relative;
-    bottom: 20px;
 }
 
 .main__logotipo{
-    width: 930px;
-    height: 215px;
+    width: 75%;
     position: relative;
-    bottom: 400px;
+    bottom: calc(100% + 125px);
     z-index: 2000;
 }
 
@@ -129,29 +133,15 @@ body{
 
 .seccionServicios{
     text-align: center;
-    display: grid;
     width: 100%;
-    grid-template-areas: "informe trabajoMano correccion";
-    justify-content: center;
-    grid-column-gap: 50px;
-}
-
-.informe{
-    grid-area: informe;
-}
-
-.trabajoMano{
-    grid-area: trabajoMano;
-}
-
-.correccion{
-    grid-area: correccion;
+    display: flex; 
+    justify-content: center;  
 }
 
 .seccionServicios__servicio{
     text-align: center;
-    width: 350px;
-    height: 400px;
+    width: 98%;
+    height: 100%;
     display: inline-block;
     background-color:  #eab7a350;
     border-radius: 5px;
@@ -160,8 +150,6 @@ body{
 .seccionServicios__servicio:hover{
     background-color:  #eab7a3;
     transition: 0.5s;
-    width: 350px;
-    height: 400px;
     box-shadow: 0px 0px 2px 5px #999;
     transform: translateY(-15px);
 }
@@ -531,16 +519,6 @@ body{
 }
 
 @media screen and (max-width: 1200px) {
-    .seccionServicios{
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 40px 40px; 
-        grid-template-areas: 
-        ". informe trabajoMano ."
-        ". correccion correccion .";
-        justify-content: center;
-    }
-
     .seccionServicios__servicio:hover{
         transform: none;
         pointer-events: none;
@@ -549,11 +527,6 @@ body{
         width: none;
         height: none;
         box-shadow: none;
-    }
-
-    .main__logotipo{
-        width: 768px;
-        height: 200px;
     }
 
     .seccionDescripcion{
@@ -573,9 +546,10 @@ body{
         border-color: #244444c4;
         box-shadow: none;
     }
+    
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 990px){
     .footer{
         height: 360px;
         flex-direction: column;
@@ -602,6 +576,9 @@ body{
         height: 500px;
     }
 
+    .correccion{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -627,15 +604,9 @@ body{
         height: 400px;
     }
     
-    .main__logotipo{
-        width: 480px;
-        height: 120px;
-        bottom: 300px;
-    }
-
     .seccionDescripcion {
         margin-bottom: 220px;
-        margin-top: 25px;
+        margin-top: 115px;
     }
     
     .articuloDescripcion {
@@ -651,13 +622,8 @@ body{
         font-size: 1.1em;
     }
    
-    .seccionServicios{ 
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "informe"
-        "trabajoMano"
-        "correccion";
+    .trabajoMano{
+        margin-top: 15px;
     }
 
     .footer__barraNavegacion{
@@ -712,18 +678,13 @@ body{
 }
 
 @media screen and (max-width: 480px){
-    .main__logotipo {
-        width: 300px;
-        height: 90px;
-        bottom: 200px;
-    }
-
     .main__biblioteca {
         height: 300px;
     }
 
     .main {
         height: 370px;
+        padding-top: 100px;
     }
 
     .articuloDescripcion_parrafo {
@@ -736,12 +697,6 @@ body{
     
     .seccionServicios__servicio__titulo {
         font-size: 1.4em;
-    }
-
-    .seccionServicios__servicio {
-        width: 290px;
-        height: 500px;
-        transition: none;
     }
 
     .footer__contacto_info {

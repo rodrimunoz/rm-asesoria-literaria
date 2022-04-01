@@ -16,36 +16,77 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body>
+<body class="container-fluid">
     <header class="header">
-        <nav class="nav">
-            <img src="imagenes/logo-dorado.png" alt="Logo RM Asesoría Literaria" title="Logo RM Asesoría Literaria"
-                class="nav__imagen">
-            <ul class="nav__barraNavegacion">
-                <li class="nav__barraNavegacion__elemento"><a href="index.html"
-                        class="nav__barraNavegacion__link nav__barraNavegacion__link:hover">Inicio</a>
-                </li>
-                <li class="nav__barraNavegacion__elemento"><a href="html/sobre-mi.html"
-                        class="nav__barraNavegacion__link nav__barraNavegacion__link:hover">Sobre Mí</a>
-                </li>
-                <li class="nav__barraNavegacion__elemento"><a href="html/servicios.html"
-                        class="nav__barraNavegacion__link nav__barraNavegacion__link:hover">Servicios</a>
-                </li>
-                <li class="nav__barraNavegacion__elemento"><a href="html/contacto.html"
-                        class="nav__barraNavegacion__link nav__barraNavegacion__link:hover">Contacto</a>
-                </li>
-                <li class="nav__barraNavegacion__elemento"><a href="html/faq.html"
-                        class="nav__barraNavegacion__link nav__barraNavegacion__link:hover">FAQ</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light nav">
+            <div class="container-fluid">
+                <img src="imagenes/logo-dorado.png" alt="Logo RM Asesoría Literaria" title="Logo RM Asesoría Literaria"
+                    class="nav__imagen">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav__barraNavegacion__elemento">
+                            <a class="active nav__barraNavegacion__link nav__barraNavegacion__link:hover"
+                                aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item nav__barraNavegacion__elemento">
+                            <a class="active nav__barraNavegacion__link nav__barraNavegacion__link:hover"
+                                aria-current="page" href="html/sobre-mi.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item nav__barraNavegacion__elemento">
+                            <a class="active nav__barraNavegacion__link nav__barraNavegacion__link:hover"
+                                aria-current="page" href="html/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item nav__barraNavegacion__elemento">
+                            <a class="active nav__barraNavegacion__link nav__barraNavegacion__link:hover"
+                                aria-current="page" href="html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item nav__barraNavegacion__elemento">
+                            <a class="active nav__barraNavegacion__link nav__barraNavegacion__link:hover"
+                                aria-current="page" href="html/faq.html">FAQ</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="main">
-        <!-- ACÁ VA EL CARRUSEL-->
-        <img src="imagenes/biblitoeca.jpg" alt="Biblioteca" title="Biblioteca" class="main__biblioteca">
-        <img src="imagenes/logo-dorado-completo.png" alt="Logo RM Asesoría Literaria" title="Logo RM Asesoría Literaria"
-            class="main__logotipo animate__animated animate__fadeInUp">
+
+    <main class="row main">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/biblitoeca.jpg" class="d-block w-100 main__biblioteca" alt="Biblioteca"
+                        title="Biblioteca">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/biblitoeca.jpg" class="d-block w-100 main__biblioteca" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/biblitoeca.jpg" class="d-block w-100 main__biblioteca" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="col-12">
+            <img src="imagenes/logo-dorado-completo.png"
+                class="img-fluid main__logotipo animate__animated animate__fadeInUp" alt="Responsive image">
+        </div>
+
     </main>
 
     <section class="seccionDescripcion">
@@ -70,8 +111,8 @@
         </article>
     </section>
 
-    <section class="seccionServicios">
-        <div class="informe">
+    <section class="row seccionServicios">
+        <div class="informe col-lg-4 col-md-6 col-sm-12">
             <article class="seccionServicios__servicio">
                 <h3 class="seccionServicios__servicio__titulo">Informe de Lectura</h3>
                 <p class="seccionServicios__servicio__parrafo">
@@ -87,7 +128,7 @@
             </article>
         </div>
 
-        <div class="trabajoMano">
+        <div class="trabajoMano col-lg-4 col-md-6 col-sm-12">
             <article class="seccionServicios__servicio">
                 <h3 class="seccionServicios__servicio__titulo">Trabajo Mano a Mano</h3>
                 <p class="seccionServicios__servicio__parrafo">
@@ -102,7 +143,7 @@
             </article>
         </div>
 
-        <div class="correccion">
+        <div class="correccion col-lg-4 col-md-0 col-sm-12">
             <article class="seccionServicios__servicio">
                 <h3 class="seccionServicios__servicio__titulo">Corrección de Estilo</h3>
                 <p class="seccionServicios__servicio__parrafo">
@@ -136,7 +177,7 @@
             <p class="footer__contacto_info gridCorreo">rodrigom_9896@gmail.com</p>
         </div>
 
-        <div>
+        <div class="">
             <ul class="footer__barraNavegacion">
                 <a href="index.html" class="footer__nav__link">
                     <li class="footer__nav__link__elemento">Inicio</li>
@@ -156,7 +197,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="">
             <img src="imagenes/logo-copyright.png" alt="Copyright" title="Copyright" class="footer__copyright__imagen">
         </div>
     </footer>
