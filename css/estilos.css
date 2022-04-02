@@ -437,26 +437,35 @@ body{
     margin-top: 80px;
 }
 
+.backgroundColorFormulario{
+    background-color: #f5efefde;
+}
+
 .formulario__contenedorDatos{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-right: 15px;
 }
 
 .formulario__contenedor__datos{
-    height: 30px;
-    width: 250px;
+    width: 50%;
     text-align: center;
     background-color: #f7f5f5;
     border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 2px 5px #999;
 }
 
 .formulario__contenedor__opcion{
     height: 33px;
-    width: 250px;
+    width: 50%;
     text-align: center;
     background-color: #f7f5f5;
     border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 2px 5px #999;
 }
 
 .formulario__contenedorConsulta{
@@ -467,12 +476,12 @@ body{
 }
 
 .formulario__contenedor__texto{
-    margin-top: 50px;
     margin-bottom: 10px;
-    width: 450px;
+    width: 50%;
     padding: 10px;
     background-color: #f7f5f5;
     border-radius: 5px;
+    box-shadow: 0px 0px 2px 5px #999;
 }
 
 .formulario__contenedor__boton{
@@ -481,6 +490,21 @@ body{
     background-color: #e4bc74;
     border-style: none;
     border-radius: 3px;
+}
+
+.backgroundColorFormulario:focus{
+    background-color:  #eab7a3;
+    transition: 0.5s;
+}
+
+.formulario__contenedor__texto:focus{
+    background-color:  #eab7a3;
+    transition: 0.5s;
+}
+
+.formulario__contenedor__opcion:focus{
+    background-color:  #eab7a3;
+    transition: 0.5s;
 }
 
 .formulario__contenedor__boton:hover{
@@ -581,6 +605,11 @@ body{
     .correccion{
         margin-top: 15px;
     }
+
+    .botonNav{
+        background-color: #e4bc74;
+        margin-left: 130px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -667,6 +696,7 @@ body{
 
     .formulario__contenedor__datos {
         margin-bottom: 30px;
+        margin-right: 0px;
     }
 
     .formulario__contenedor__texto {
