@@ -546,10 +546,6 @@ body{
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 
-.accordion-button:not(.collapsed)::after {
-    filter: brightness(50.5);
-}
-
 .accordion-button::after{
     filter: brightness(50.5);
 }
@@ -557,124 +553,6 @@ body{
 .preguntas{
     margin: 50px;
 }
-
-.preguntas__titulo{
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-
-.preguntas__respuesta{
-    margin-bottom: 25px;
-}
-
-
-
-
-
-
-
-/*CSS FORMULARIO*/
-
-.accordion {
-    box-sizing: border-box;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-}
-
-.accordion-select {
-    cursor: pointer;
-    margin: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-.accordion-title {
-    position: relative;
-}
-
-.accordion-title:not(:nth-last-child(2))::after {
-    border: 1px solid transparent;
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.accordion-title span {
-    bottom: 0px;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    white-space: nowrap;
-    width: 100%;
-}
-
-.accordion-content {
-    box-sizing: border-box;
-    overflow: auto;
-    position: relative;
-    transition: margin 0.3s ease 0.1s;
-}
-
-.accordion-select:checked + .accordion-title + .accordion-content {
-    margin-bottom: 0;
-    margin-right: 0;
-}
-
-/* Generated styles starts here */
-
-.accordion {
-    border-color: #dedede;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 1px;
-    flex-direction: column;
-    height: auto;
-} 
-
-.accordion-title,
-.accordion-select  {
-    background-color: #ffffff;
-    color: white;
-    width: 100%;
-    height: 57px;
-    font-size: 15px;
-    background-color: #244444;
-}
-
-.accordion-select {
-    margin-bottom: -57px;
-    margin-right: 0;
-}
-
-.accordion-title:not(:nth-last-child(2))::after {
-    border-bottom-color: rgb(234, 234, 234);
-    border-right-color: transparent;
-}
-
-.accordion-title span  {	
-    transform: rotate(0deg);
-    -ms-writing-mode: lr-tb;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-    padding-left: 29px;
-    padding-right: 29px;
-    line-height: 57px;
-} 
-
-.accordion-content {
-    background-color: #f7f7f7;
-    color: #7f8787;
-    height: 120px;
-    margin-bottom: -120px;
-    margin-right: 0;
-    padding: 30px;
-    width: 100%;
-} 
-
-
 
 @media screen and (max-width: 1200px) {
     .seccionServicios__servicio:hover{
