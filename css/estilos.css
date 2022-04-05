@@ -521,7 +521,7 @@ body{
 /* PÁGINA: FAQ */
 
 .introduccionFAQ{
-    padding-top: 230px;
+    padding-top: 185px;
 }
 
 .introduccionFAQ__titulo{
@@ -552,7 +552,7 @@ body{
 }
 
 .accordion-item {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .preguntas{
@@ -687,6 +687,14 @@ body{
 
     .navbar>.container-fluid{
         justify-content: space-evenly;
+    }
+
+    .preguntas {
+        margin: 50px 2%;
+    }
+
+    .introduccionFAQ {
+        padding-top: 140px;
     }
     
 }
