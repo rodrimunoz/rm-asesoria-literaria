@@ -421,7 +421,7 @@ body{
 }
 
 .formulario{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .formulario__contenedorDatos{
@@ -508,8 +508,7 @@ body{
 .content{
     justify-content: center;
     align-items: center;
-    height:100vh;
-    margin: 50px 2%;
+    margin-top: 70px;
   }
 
   .center{
@@ -556,23 +555,7 @@ body{
       margin-bottom: 1rem;
       padding: 1rem 1.25rem;
   }
-  
-  summary::after {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f107";
-      display: inline-block;
-      padding-right: 15px;
-      font-size: 180%;
-      transition: 2s;
-  }
-  details[open] summary::after {
-      content: '\f106';
-      display: inline-block;
-      padding-right: 15px;
-      font-size: 180%;
-  }
-  
+   
   details[open] summary:hover {
     background:none;
   }
@@ -702,18 +685,13 @@ body{
         justify-content: space-evenly;
     }
 
-    .introduccionFAQ__texto, .introduccionContacto__texto {
-        width: 80%;
+    .introduccionFAQ__texto, .introduccionContacto__texto, .introduccionServicios__texto {
+        width: 90%;
     }
 
     .formulario__contenedor__datos, .formulario__contenedor__opcion, .formulario__contenedor__texto{
         width: 75%;
     }
-
-    .introduccionServicios__texto{
-        width: 90%;   
-    }
-
 }
 
 
@@ -757,7 +735,8 @@ body{
     }
 
     .servicios__articulo__descripcion, .servicios__articulo__descripcion--marginLeft {
-        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 50px;
         font-size: 15px;
         width: 90%;
