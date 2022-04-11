@@ -1,0 +1,113 @@
+/* ----------   FOOTER ----------   */
+
+/* ----------   Sección Contacto ----------   */
+
+.footer{
+    background-color: #beb9b3;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer__contacto{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "wpp numero"
+    "instagram cuenta"
+    "mail correo";
+    grid-template-rows: 0.5fr;
+    .gridWpp{
+        grid-area: wpp;
+    }
+    
+    .gridIg{
+        grid-area: instagram;
+    }
+    
+    .gridMail{
+        grid-area: mail;
+    }
+    
+    .gridNumero{
+        grid-area: numero;
+    }
+    
+    .gridCuenta{
+        grid-area: cuenta;
+    }
+    
+    .gridCorreo{
+        grid-area: correo;
+    }
+
+    .footer__contacto__titulo{
+        grid-area: titulo;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .footer__contacto_imagenes{
+        display: inline-block;
+    }
+    
+    .footer__contacto__imagen{
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+    .footer__contacto_info{
+        display: inline-block;
+        margin-top: 10px;
+        vertical-align: middle;
+        &:hover{
+            color: #000000;
+        }
+    }
+    
+    .footer__contacto_info--alineado{
+        margin-bottom: 10px;
+    }
+    
+    .footer__contacto_info--sinLink{
+        text-decoration: none;
+        list-style: none;
+        color:  #000000 ;
+        color: black;
+    }
+}
+
+
+
+/* ----------   Sección Nav ----------   */
+
+.footer__nav__lista{
+    display: inline-block;
+}
+
+.footer__nav__link{
+    text-decoration: none;
+    list-style: none;
+    color:  #000000 ;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 25px;
+    &:hover{
+        color: black;
+    }
+}
+
+
+/* ----------   Sección copyright ----------   */
+
+.footer__copyright__imagen{
+    width: 30px;
+    height: 30px;
+}

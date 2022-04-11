@@ -1,0 +1,211 @@
+@media screen and (max-width: 1200px) {
+    .seccionServicios__servicio:hover{
+        transform: none;
+        pointer-events: none;
+        background-color: #eab7a350;
+        transition: none;
+        width: none;
+        height: none;
+        box-shadow: none;
+    }
+
+    .nav__barraNavegacion__elemento:hover {
+        background-color: #244444;
+        transition: none;
+    }
+
+    .servicios__articulo__imagen:hover{
+        transform: none;
+        transition: none;
+        border-style: solid;
+        border-color: #244444c4;
+        box-shadow: none;
+    }
+    
+}
+
+@media screen and (max-width: 990px){
+    .footer{
+        height: 360px;
+        flex-direction: column;
+    }
+
+    .footer__contacto__titulo{
+        text-align: center;
+        margin-bottom: 15px
+    }
+    .main__biblioteca, .main__biblioteca3{
+        height: 480px;
+    }
+
+    .main {
+        height: 450px;
+        padding-top: 80px;
+    }
+
+    .articuloDescripcion {
+        width: 90%;
+    }
+
+    .articuloDescripcion--paddinLeft {
+        padding-left: 0px;
+    }
+
+    .correccion{
+        margin-top: 15px;
+    }
+
+    .botonNav{
+        background-color: #e4bc74;
+        margin-left: 130px;
+    }
+
+    .sobreMi, .introduccionFAQ, .introduccionContacto, .introduccionServicios{
+        padding-top: 140px;
+    }
+
+    .sobreMi__contenedorImagen {
+        justify-content: center;
+    }
+
+    .sobreMi__contenedorPresentacion {
+        align-items: center;
+    }
+
+    .sobreMi__presentacion{
+        margin-left: 0px;
+        hyphens: auto;
+        width: 90%;
+    }
+
+    .articuloDescripcion_parrafo {
+        text-align: justify;
+        font-size: $letraBodyMobile;
+    }
+
+    .header {
+        height: 11vh;
+    }
+
+    .nav {
+        width: 100vw;
+        height: 11vh;
+    }
+
+    .nav__imagen {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .botonNav{
+        height: 40px;
+        width: 57px;
+    }
+
+    .navLista{
+        background-color: #244444;
+    }
+
+    .navbar>.container-fluid{
+        justify-content: space-evenly;
+    }
+
+    .introduccionFAQ__texto, .introduccionContacto__texto, .introduccionServicios__texto {
+        width: 90%;
+    }
+
+    .formulario__contenedor__datos, .formulario__contenedor__opcion, .formulario__contenedor__texto{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav__barraNavegacion, .footer__barraNavegacion {
+        display: none;
+    }
+
+    .nav__imagen {
+        margin-right: 0px;
+    }
+    
+    .main{
+        height: 380px;
+    }
+       
+    .main__biblioteca, .main__biblioteca3{
+        height: 400px;
+    }
+
+    .articuloDescripcion--paddinLeft{
+        padding-left: 0px;
+    }
+    
+    .trabajoMano{
+        margin-top: 15px;
+    }
+
+    .servicios__articulo{
+        flex-direction: column;
+    }   
+    
+    .servicios__articulo--reverse768{
+        flex-direction: column-reverse;
+    }
+
+    .servicios__articulo__descripcion, .servicios__articulo__descripcion--marginLeft {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .servicios__articulo__imagen {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main__biblioteca, .main__biblioteca3{
+        height: 300px;
+    }
+
+    .main {
+        height: 270px;
+    }
+    
+    .seccionServicios__servicio__titulo {
+        font-size: 1.4em;
+    }
+
+    .footer__contacto_info {
+        font-size: 0.9em;
+    }
+
+    .nav__imagen {
+        width: 85px;
+        height: 85px;
+    }
+
+    .sobreMi__imagenRostro {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .navLista{
+        margin-top: -5px;
+    }
+}

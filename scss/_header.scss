@@ -1,0 +1,43 @@
+/*  ---------- HEADER ----------  */
+
+
+.header {
+    width: 100vw;
+    background-color: #244444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3000;
+    .nav {
+        background-color: #244444;
+    }
+}
+
+.nav__imagen {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+
+.nav__barraNavegacion__elemento {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    .nav__barraNavegacion__link {
+        text-decoration: none;
+        list-style: none;
+        color: #f4e4c4;
+        font-size: 20px;
+        font-weight: 600;
+        &:hover{
+            color: #f4e4c4;
+        }
+    }
+    &:hover{
+        background-color: #84543c;
+        transition: 0.3s;
+    }
+}
