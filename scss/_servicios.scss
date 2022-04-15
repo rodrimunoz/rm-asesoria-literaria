@@ -1,0 +1,62 @@
+/*   ---------- SERVICIOS  ----------  */
+
+.introduccionServicios{
+    padding-top: $seperacionHeader;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .introduccionServicios__titulo{
+        font-size: $letraTitulos;
+        margin-bottom: 25px;
+        color: $colorTitulos;
+        text-align: center;
+    }
+    .introduccionServicios__texto{
+        width: 70%;   
+        text-align: justify;
+        font-size: $letraBodyMobile;
+    }
+}
+
+
+
+.servicios{
+    padding-top: 70px;
+    text-align: center;
+    .servicios__articulo{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .servicios__articulo__imagen{
+            width: 300px;
+            height: 300px;
+            border-style: solid;
+            border-color: #244444c4;
+            &:hover{
+                transform: scale(1.04,1.04);
+                transition: 0.5s;
+                border-style: solid;
+                border-color: #244444c4;
+                box-shadow: 0px 0px 4px 5px  #c29076b8;
+            }
+        }
+        .servicios__articulo__descripcion{
+            width: 40%;
+            text-align: justify;
+            margin-left: 30px;
+            line-height: 20px;
+            font-size: $letraBodyMobile;
+        }
+        .servicios__articulo__descripcion--marginLeft{
+            width: 40%;
+            text-align: justify;
+            margin-right: 30px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+

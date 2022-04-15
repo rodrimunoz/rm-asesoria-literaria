@@ -22,6 +22,16 @@ body{
     padding-top: 115px;
     text-align: center;
     height: 550px;
+    .main__biblioteca{
+        width: 100%;
+        height: 550px;
+        filter: brightness(50%);
+    }
+    .main__biblioteca3{
+        width: 100%;
+        height: 550px;
+        filter: brightness(70%);
+    }
     .main__logotipo{
         width: 75%;
         position: relative;
@@ -29,20 +39,6 @@ body{
         z-index: 2000;
     }
 }
-
-.main__biblioteca{
-    width: 100%;
-    height: 550px;
-    filter: brightness(50%);
-}
-
-.main__biblioteca3{
-    width: 100%;
-    height: 550px;
-    filter: brightness(70%);
-}
-
-
 
 /* ----------  SECCIÓN DESCRIPCIÓN ----------  */
 
@@ -55,23 +51,15 @@ body{
         .articuloDescripcion{
             width: 80%;
             padding-bottom: 15px;
+            .articuloDescripcion_parrafo{
+                font-size: 125%;
+                text-align: center;
+                line-height: 25px;
+            }
         }
     }
 }
 
-.articuloDescripcion--paddinRight{
-    padding-right: 15px;
-}
-
-.articuloDescripcion--paddinLeft{
-    padding-left: 15px;
-}
-
-.articuloDescripcion_parrafo{
-    font-size: 125%;
-    text-align: center;
-    line-height: 25px;
-}
 
 /* ----------  SECCIÓN SERVICIOS ----------  */
 
@@ -92,7 +80,6 @@ body{
             margin: 15px;
             font-weight: 700;
         }
-        
         .seccionServicios__servicio__parrafo{
             line-height: 25px;
             margin: 15px;

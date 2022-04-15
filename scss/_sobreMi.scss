@@ -1,0 +1,41 @@
+
+
+/*   ---------- SOBRE MI  ----------  */
+
+
+.sobreMi{
+    padding-top: $seperacionHeader;
+    .sobreMi__titulo{
+        font-size: $letraTitulos;
+        margin-bottom: 25px;
+        color: $colorTitulos;
+        text-align: center;
+    }
+    .SobreMi__contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .sobreMi__contenedorImagen{
+            margin-left: 20px;
+            margin-bottom: 15px;
+            .sobreMi__imagenRostro{
+                width: 350px;
+                height: 500px;
+            }
+        }
+        .sobreMi__contenedorPresentacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .sobreMi__presentacion{
+                width: 500px;
+                margin-left: 50px;
+                line-height: 25px;
+                text-align: justify;
+                font-size: $letraBodyMobile;
+            }
+        }
+    }
+}
+

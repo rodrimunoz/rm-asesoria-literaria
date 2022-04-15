@@ -298,19 +298,26 @@ body{
 
 
 .sobreMi{
-    padding-top: 185px;
+    padding-top: 200px;
+}
+
+.SobreMi__contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .sobreMi__contenedorImagen{
+    margin-left: 20px;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: end;
 }
+
 
 .sobreMi__contenedorPresentacion{
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    align-items: center;
 }
 
 .sobreMi__titulo{
@@ -326,9 +333,10 @@ body{
 }
 
 .sobreMi__presentacion{
-    width: 50%;
+    width: 500px;
     margin-left: 50px;
     line-height: 25px;
+    text-align: justify;
 }
 
 

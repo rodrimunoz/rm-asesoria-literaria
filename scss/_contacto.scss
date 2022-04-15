@@ -1,0 +1,76 @@
+/* ---------- PÁGINA: CONTACTO ----------  */
+
+.introduccionContacto{
+    padding-top: $seperacionHeader;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .introduccionContacto__titulo{
+        font-size: $letraTitulos;
+        margin-bottom: 25px;
+        color: $colorTitulos;
+    }
+    
+    .introduccionContacto__texto{
+        width: 70%;
+        text-align: justify;
+        font-size: $letraBodyMobile; 
+    }
+}
+
+
+.formulario{
+    margin-top: 60px;
+    .formulario__contenedorDatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .formulario__contenedor__datos{
+            width: 50%;
+            height: 38px;
+            text-align: center;
+            background-color: #f7f5f5;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            box-shadow: 0px 0px 0px 4px  $colorVerde;
+        }
+        .formEmail{
+            height: 38px;
+        }
+    }
+    .formulario__contenedor__opcion{
+        height: 38px;
+        width: 50%;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        box-shadow: 0px 0px 0px 4px  #244444;
+    }
+    .formulario__contenedorConsulta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .formulario__contenedor__texto{
+            margin-bottom: 25px;
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px 4px  #244444;
+        }
+        .formulario__contenedor__boton{
+            width: 140px;
+            height: 30px;
+            background-color: $caquiOscuro;
+            border-style: none;
+            border-radius: 3px;
+            &:hover{
+                width: 145px;
+                height: 35px;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+        }
+    }
+}
