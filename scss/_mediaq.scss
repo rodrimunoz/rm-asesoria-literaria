@@ -4,8 +4,7 @@
         pointer-events: none;
         background-color: #eab7a350;
         transition: none;
-        width: none;
-        height: none;
+        @include tamaño(none, none);
         box-shadow: none;
     }
 
@@ -23,8 +22,7 @@
     }
 
     .formulario .formulario__contenedorConsulta .formulario__contenedor__boton:hover{
-        width: 140px;
-        height: 30px;
+        @include tamaño(140px, 30px);
         transition: none;
         cursor: none;
     }
@@ -91,13 +89,11 @@
     }
 
     .nav {
-        width: 100vw;
-        height: 11vh;
+        @include tamaño(100vw, 11vh);
     }
 
     .nav__imagen {
-        width: 80px;
-        height: 80px;
+        @include tamaño(80px, 80px);
     }
 
     .navbar {
@@ -106,8 +102,7 @@
     }
     
     .botonNav{
-        height: 40px;
-        width: 57px;
+        @include tamaño(57px, 40px);
     }
 
     .navLista{
@@ -129,12 +124,7 @@
 
 
 @media screen and (max-width: 768px){
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
+   
     .nav__barraNavegacion, .footer__barraNavegacion {
         display: none;
     }
@@ -189,14 +179,8 @@
         font-size: 0.9em;
     }
 
-    .nav__imagen {
-        width: 85px;
-        height: 85px;
-    }
-
     .sobreMi__imagenRostro {
-        width: 250px;
-        height: 350px;
+        @include tamaño(250px, 350px);
     }
     
     .navLista{

@@ -12,16 +12,13 @@
         text-align: center;
     }
     .SobreMi__contenedor{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayFlexCenter;
         flex-wrap: wrap;
         .sobreMi__contenedorImagen{
             margin-left: 20px;
             margin-bottom: 15px;
             .sobreMi__imagenRostro{
-                width: 350px;
-                height: 500px;
+                @include tamaño(350px, 500px);
             }
         }
         .sobreMi__contenedorPresentacion{

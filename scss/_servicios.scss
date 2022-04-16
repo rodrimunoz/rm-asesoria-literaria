@@ -2,9 +2,7 @@
 
 .introduccionServicios{
     padding-top: $seperacionHeader;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayFlexCenter;
     flex-direction: column;
     .introduccionServicios__titulo{
         font-size: $letraTitulos;
@@ -26,12 +24,9 @@
     text-align: center;
     .servicios__articulo{
         margin-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayFlexCenter;
         .servicios__articulo__imagen{
-            width: 300px;
-            height: 300px;
+            @include tamaño(300px, 300px);
             border-style: solid;
             border-color: #244444c4;
             &:hover{
@@ -42,19 +37,18 @@
                 box-shadow: 0px 0px 4px 5px  #c29076b8;
             }
         }
-        .servicios__articulo__descripcion{
-            width: 40%;
-            text-align: justify;
-            margin-left: 30px;
-            line-height: 20px;
-            font-size: $letraBodyMobile;
-        }
         .servicios__articulo__descripcion--marginLeft{
             width: 40%;
             text-align: justify;
             margin-right: 30px;
-            line-height: 20px;
         }
+        .servicios__articulo__descripcion{
+            @extend .servicios__articulo__descripcion--marginLeft;
+            margin-right: 0px;
+            margin-left: 30px;
+            font-size: $letraBodyMobile;
+        }
+
     }
 }
 

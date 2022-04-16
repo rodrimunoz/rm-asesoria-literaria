@@ -45,8 +45,8 @@
   background-color: #beb9b3;
   margin-top: 100px;
   margin-bottom: 0px;
-  height: 240px;
   width: 100%;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: space-evenly; }
@@ -130,13 +130,11 @@ body {
   padding-top: 115px;
   text-align: center;
   height: 550px; }
-  .main .main__biblioteca {
+  .main .main__biblioteca, .main .main__biblioteca3 {
     width: 100%;
     height: 550px;
     filter: brightness(50%); }
   .main .main__biblioteca3 {
-    width: 100%;
-    height: 550px;
     filter: brightness(70%); }
   .main .main__logotipo {
     width: 75%;
@@ -253,24 +251,21 @@ body {
         border-style: solid;
         border-color: #244444c4;
         box-shadow: 0px 0px 4px 5px  #c29076b8; }
+    .servicios .servicios__articulo .servicios__articulo__descripcion--marginLeft, .servicios .servicios__articulo .servicios__articulo__descripcion {
+      width: 40%;
+      text-align: justify;
+      margin-right: 30px; }
     .servicios .servicios__articulo .servicios__articulo__descripcion {
-      width: 40%;
-      text-align: justify;
+      margin-right: 0px;
       margin-left: 30px;
-      line-height: 20px;
       font-size: 16px; }
-    .servicios .servicios__articulo .servicios__articulo__descripcion--marginLeft {
-      width: 40%;
-      text-align: justify;
-      margin-right: 30px;
-      line-height: 20px; }
 
 /* ---------- PÁGINA: CONTACTO ----------  */
 .introduccionContacto {
   padding-top: 185px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column; }
   .introduccionContacto .introduccionContacto__titulo {
     font-size: 45px;
@@ -298,8 +293,8 @@ body {
     .formulario .formulario__contenedorDatos .formEmail {
       height: 38px; }
   .formulario .formulario__contenedor__opcion {
-    height: 38px;
     width: 50%;
+    height: 38px;
     text-align: center;
     border-radius: 5px;
     margin-bottom: 25px;
@@ -422,7 +417,7 @@ details summary::-webkit-details-marker {
   .footer__contacto__titulo {
     text-align: center;
     margin-bottom: 15px; }
-  .main .main__biblioteca, .main .main__biblioteca3 {
+  .main .main__biblioteca, .main .main__biblioteca3, .main .main__biblioteca3 {
     height: 480px; }
   .main {
     height: 450px;
@@ -459,8 +454,8 @@ details summary::-webkit-details-marker {
     padding-top: 0px;
     padding-bottom: 0px; }
   .botonNav {
-    height: 40px;
-    width: 57px; }
+    width: 57px;
+    height: 40px; }
   .navLista {
     background-color: #244444; }
   .navbar > .container-fluid {
@@ -471,17 +466,13 @@ details summary::-webkit-details-marker {
     width: 75%; } }
 
 @media screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .nav__barraNavegacion, .footer__barraNavegacion {
     display: none; }
   .nav__imagen {
     margin-right: 0px; }
   .main {
     height: 380px; }
-  .main .main__biblioteca, .main .main__biblioteca3 {
+  .main .main__biblioteca, .main .main__biblioteca3, .main .main__biblioteca3 {
     height: 400px; }
   .trabajoMano {
     margin-top: 15px; }
@@ -489,7 +480,7 @@ details summary::-webkit-details-marker {
     flex-direction: column; }
   .servicios__articulo--reverse768 {
     flex-direction: column-reverse; }
-  .servicios .servicios__articulo .servicios__articulo__descripcion, .servicios .servicios__articulo .servicios__articulo__descripcion--marginLeft {
+  .servicios .servicios__articulo .servicios__articulo__descripcion, .servicios .servicios__articulo .servicios__articulo__descripcion--marginLeft, .servicios .servicios__articulo .servicios__articulo__descripcion {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -497,7 +488,7 @@ details summary::-webkit-details-marker {
     width: 90%; } }
 
 @media screen and (max-width: 480px) {
-  .main .main__biblioteca, .main .main__biblioteca3 {
+  .main .main__biblioteca, .main .main__biblioteca3, .main .main__biblioteca3 {
     height: 300px; }
   .main {
     height: 270px; }
@@ -505,9 +496,6 @@ details summary::-webkit-details-marker {
     font-size: 1.4em; }
   .footer__contacto_info {
     font-size: 0.9em; }
-  .nav__imagen {
-    width: 85px;
-    height: 85px; }
   .sobreMi__imagenRostro {
     width: 250px;
     height: 350px; }

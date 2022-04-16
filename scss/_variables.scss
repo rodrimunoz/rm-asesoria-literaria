@@ -13,3 +13,30 @@ $colorTitulos: #244444d9;
 $seperacionHeader: 185px;
 $seperacionHeaderMobile: 140px;
 
+
+
+
+
+@mixin tamaño($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin displayFlexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+$links: (
+    text-decoration: none,
+    list-style: none,
+    color: #f4e4c4,
+    font-size: 20px,
+    font-weight: 600,
+)

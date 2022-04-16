@@ -4,9 +4,7 @@
 .header {
     width: 100vw;
     background-color: #244444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayFlexCenter;
     position: fixed;
     z-index: 3000;
     .nav {
@@ -15,8 +13,7 @@
 }
 
 .nav__imagen {
-    width: 100px;
-    height: 100px;
+    @include tamaño(100px, 100px);
     margin-right: 50px;
 }
 
@@ -27,11 +24,11 @@
     padding: 8px 12px;
     border-radius: 3px;
     .nav__barraNavegacion__link {
-        text-decoration: none;
-        list-style: none;
-        color: #f4e4c4;
-        font-size: 20px;
-        font-weight: 600;
+        text-decoration: map-get($links, text-decoration);
+        list-style: map-get($links, list-style);
+        color: map-get($links, color);
+        font-size: map-get($links, font-size);
+        font-weight: map-get($links, font-weight);
         &:hover{
             color: #f4e4c4;
         }
