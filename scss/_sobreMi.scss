@@ -7,7 +7,7 @@
     padding-top: $seperacionHeader;
     .sobreMi__titulo{
         font-size: $letraTitulos;
-        margin-bottom: 25px;
+        margin-bottom: $marginBottomTitulos;
         color: $colorTitulos;
         text-align: center;
     }
@@ -15,8 +15,7 @@
         @include displayFlexCenter;
         flex-wrap: wrap;
         .sobreMi__contenedorImagen{
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
             .sobreMi__imagenRostro{
                 @include tamaño(350px, 500px);
             }

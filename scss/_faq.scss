@@ -3,7 +3,7 @@
     .introduccionFAQ__titulo{
         font-size: $letraTitulos;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: $marginBottomTitulos;
         color: $colorTitulos;
     }
     
@@ -20,7 +20,7 @@
 .content{
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   .center{

@@ -6,7 +6,7 @@
     flex-direction: column;
     .introduccionServicios__titulo{
         font-size: $letraTitulos;
-        margin-bottom: 25px;
+        margin-bottom: $marginBottomTitulos;
         color: $colorTitulos;
         text-align: center;
     }
