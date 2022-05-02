@@ -45,7 +45,7 @@
 
     .main {
         height: 450px;
-        padding-top: 80px;
+        padding-top: 55px;
     }
 
     .seccionDescripcion .articuloDescripcion__Contenedor .articuloDescripcion {
@@ -89,11 +89,11 @@
     }
 
     .nav {
-        @include tamaño(100vw, 11vh);
+        @include tamaño(100vw, 12vh);
     }
 
     .nav__imagen {
-        @include tamaño(80px, 80px);
+        @include tamaño(65px, 65px);
     }
 
     .navbar {
@@ -102,7 +102,7 @@
     }
     
     .botonNav{
-        @include tamaño(57px, 40px);
+        @include tamaño(50px, 35px);
     }
 
     .navLista{
@@ -176,7 +176,7 @@
     }
 
     .main {
-        height: 270px;
+        height: 255px;
     }
     
     .seccionServicios__servicio__titulo {

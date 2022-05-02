@@ -38,3 +38,13 @@
         transition: 0.3s;
     }
 }
+
+.navbar-toggler {
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
